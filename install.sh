@@ -211,7 +211,7 @@ startINSTALL() {
     sudo NEETRESTART_MODE=a apt-get update --yes
     sudo apt update -y
     sudo apt upgrade -y
-    sudo apt install php8.1-json -y
+    sudo apt install php-json -y
     apt-get install -y stunnel4 && apt-get install -y cmake && apt-get install -y screenfetch && apt-get install -y openssl
     sudo apt-get -y install software-properties-common
     sudo add-apt-repository ppa:ondrej/php -y
@@ -223,9 +223,9 @@ startINSTALL() {
     sudo apt-get install coreutils
     apt install curl -y
     apt install git cmake -y
-    apt install php8.1 php8.1-mysql php8.1-xml php8.1-curl cron -y
-    sudo apt install php8.1-fpm
-    sudo apt install php8.1 php8.1-cli php8.1-common php8.1-json php8.1-opcache php8.1-mysql php8.1-mbstring php8.1-zip php8.1-intl php8.1-simplexml -y
+    apt install php php-mysql php-xml php-curl cron -y
+    sudo apt install php-fpm
+    sudo apt install php php-cli php-common php-json php-opcache php-mysql php-mbstring php-zip php-intl php-simplexml -y
     wait
 
     phpv=$(php -v)
